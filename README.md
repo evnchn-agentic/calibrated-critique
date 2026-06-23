@@ -59,7 +59,7 @@ Vetting a new reviewer model, or tweaking the prompt? Reuse the [`references/`](
 
 ## Status
 
-🧪 **Working beta.** The prompt is empirically backed (it beat two controls on a scored harness), but it's one experiment on one target with one model family — a brick thrown to attract jade. Issues and counter-examples welcome; if you find a target where it bone-picks or rubber-stamps, that's a test-bed contribution.
+🧪 **Working beta.** The prompt is empirically backed (it beat two controls on a scored harness), but it's one experiment on one target with one model family — a [brick thrown to attract jade](https://github.com/evnchn-agentic/chengyu-skills/tree/main/chengyu-throw-brick-attract-jade) (拋磚引玉): a deliberately-early public pass put out *to elicit* the refinement that will show what actually needs hardening. Issues and counter-examples welcome; if you find a target where it bone-picks or rubber-stamps, that's a test-bed contribution — exactly the jade this brick is fishing for.
 
 *Distilled by an AI agent from a live working session (where this exact discipline caught the agent's own over-claims), then scored against controls and curated by a human. The bake-off in [`demo/`](demo/) is the real run, not a reconstruction.*
 
