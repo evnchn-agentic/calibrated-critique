@@ -1,6 +1,6 @@
 ---
 name: calibrated-adversarial-review
-description: Use when you want a subagent / reviewer (or yourself) to give CRITICAL adversarial review that lands as high-signal and actionable — the calibrated middle between sycophantic rubber-stamping and demoralizing bone-picking. Triggers when dispatching a code/doc/claim/PR review, gatekeeping a "jade"/external deliverable before it ships, red-teaming a pitch, or any time "tear this apart but constructively" is the goal. Pairs with chengyu-listen-all-sides (which picks the reviewer MODEL); this skill shapes the reviewer's PROMPT.
+description: Use when you want a subagent / reviewer (or yourself) to give CRITICAL adversarial review that lands as high-signal and actionable — the calibrated middle between sycophantic rubber-stamping and demoralizing bone-picking. Triggers when dispatching a code/doc/claim/PR review, gatekeeping a "jade"/external deliverable before it ships, red-teaming a pitch, or any time "tear this apart but constructively" is the goal. Pairs with choosing the reviewer MODEL (a different, low-hallucination lineage); this skill shapes the reviewer's PROMPT.
 ---
 
 # Calibrated adversarial review — critical without bone-picking
@@ -11,7 +11,7 @@ The goal is the high-signal middle between two failure modes:
 
 ## The empirical finding that shapes this skill
 
-Tested head-to-head on a seeded target (a one-pager with 4 planted load-bearing flaws + bait for trivial nitpicks), same model, only the prompt varied (`~/.../review_calib/`, 2026-06-23):
+Tested head-to-head on a seeded target (a one-pager with 4 planted load-bearing flaws + bait for trivial nitpicks), same model, only the prompt varied (the full run is in [`demo/`](demo/)):
 
 - **Recall is NOT the lever.** All three prompts (harsh / bare-"give feedback" / calibrated) found all 4 real flaws on a strong model — including the hard safety-critical one. So "be more critical" does **not** find more.
 - **The lever is calibration:** the *harsh* prompt degraded into bone-picking (30 findings, contemptuous tone "statistically illiterate/reckless", scope-creep into IRB/drift/fairness, no affirmation, can't say what to skip). The *calibrated* prompt produced ~5 tiered, constructive, peer-toned findings that named what to **skip**, affirmed what was **sound**, and named the **one** thing to fix first.
@@ -39,7 +39,7 @@ Caveat kept honest: a harsh/divergent pass occasionally surfaces a genuinely sha
 |---|---|
 | "WANTS this work to succeed… not a body count" + "peer, not a gatekeeper" | the contemptuous-tone half of bone-picking |
 | "Most of this is sound is a valid outcome" + COSMETIC-SKIP tier | inability to say what's *fine* / what to skip |
-| "do NOT manufacture concerns or pad" | forced-production padding (see `enumeration-confabulation-triage`) |
+| "do NOT manufacture concerns or pad" | forced-production padding (manufacturing concerns to seem thorough) |
 | "GROUND EVERYTHING / quote the text" | manufactured / hand-wavy gripes |
 | "distinguish a genuine flaw from a defensible choice" | flagging unconventional-but-fine decisions |
 | RANK + "the ONE thing to fix first" | the flat-equal-weight 30-item wall |
@@ -48,12 +48,12 @@ Caveat kept honest: a harsh/divergent pass occasionally surfaces a genuinely sha
 ## How to use
 
 1. **Default: dispatch a review subagent with the prompt above** + the specific target ("review `src/foo.py:30-80`" / "review this render for coherence + factual backing"). Be specific about *what* and *what for*.
-2. **For a "jade"/external deliverable**, pair with `chengyu-listen-all-sides`: that skill picks the reviewer *model* (fresh lineage for honest critique, via BullshitBench); this skill shapes its *prompt*. Together: a different-lineage model, calibrated to high-signal.
+2. **For a high-stakes / external deliverable**, pick the reviewer *model* first — a different, low-hallucination lineage gives more honest critique (see the [BullshitBench](https://petergpt.github.io/bullshit-benchmark/) hallucination-rate index); *then* shape its *prompt* with this skill. Together: a different-lineage model, calibrated to high-signal. A different lineage matters because same-context self-review tends to confirm a number *exists*, not that it *means* what you claimed.
 3. **For max-divergence red-team**, additionally run a deliberately-harsh pass and *filter* it for the occasional sharp tangential catch — but ship from the calibrated pass.
-4. **Apply `chengyu-create-something-from-nothing` / verify-don't-trust-verbatim** to whatever any reviewer emits: a flagged "bug at line 42" is a *lead*, verify it yourself before acting.
+4. **Verify, don't trust verbatim:** whatever any reviewer emits, a flagged "bug at line 42" is a *lead* — go read line 42 yourself before acting.
 
 ## Reusable test-bed
 
-To re-tune the prompt or vet a new reviewer model, reuse the calibration harness pattern: a short target with N planted load-bearing flaws of known severity + deliberate bait for trivial nitpicks, then score recall of the real flaws vs padding/bone-pick rate vs calibration markers (ranking / affirmation / constructiveness / tone). Same logic as `synthetic-faultinjection-measures-unmeasurable` — inject known faults, measure detection.
+To re-tune the prompt or vet a new reviewer model, reuse the calibration harness pattern: a short target with N planted load-bearing flaws of known severity + deliberate bait for trivial nitpicks, then score recall of the real flaws vs padding/bone-pick rate vs calibration markers (ranking / affirmation / constructiveness / tone). It's a fault-injection harness — inject known faults, measure detection — the honest way to tune a critic instead of vibing it.
 
-Related: `chengyu-listen-all-sides` (reviewer model selection), `chengyu-speak-directly-no-taboo` (don't soften what you DO find), `enumeration-confabulation-triage` (anti-padding), `fresh-lineage-review-meaning-not-existence`, `feedback_bullshit_aware_reviewers`.
+See also: the [chengyu-skills](https://github.com/evnchn-agentic/chengyu-skills) collection (this skill grew out of *listen-to-all-sides* / *speak-directly* discipline) and the [BullshitBench](https://petergpt.github.io/bullshit-benchmark/) index for picking a low-hallucination reviewer model.
