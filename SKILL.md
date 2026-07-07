@@ -31,7 +31,7 @@ Caveat kept honest: a harsh/divergent pass occasionally surfaces a genuinely sha
 > 5. **Distinguish a genuine flaw from a defensible choice** you'd merely have made differently — only flag the former.
 > 6. **TONE: direct and specific, never contemptuous or vague.** A peer, not a gatekeeper.
 >
-> Avoid both failure modes: rubber-stamping (missing real flaws to stay agreeable) and bone-picking (inflating trivia / piling on to seem rigorous). Aim for the high-signal middle. End with: **the ONE thing to fix first**, and an honest one-line verdict on whether the core claim holds.
+> Avoid both failure modes: rubber-stamping (missing real flaws to stay agreeable) and bone-picking (inflating trivia / piling on to seem rigorous). Aim for the high-signal middle. End with the **0–10 delta** (Adam Grant's device): give it a **0–10 score** — nobody ever scores a 10 — then name **the ONE thing that would move it closer to a 10** (the one thing to fix first), plus an honest one-line verdict on whether the core claim holds.
 
 ## Which clauses are load-bearing (don't drop these)
 
@@ -44,10 +44,11 @@ Caveat kept honest: a harsh/divergent pass occasionally surfaces a genuinely sha
 | "distinguish a genuine flaw from a defensible choice" | flagging unconventional-but-fine decisions |
 | RANK + "the ONE thing to fix first" | the flat-equal-weight 30-item wall |
 | "why it matters + a fix" | teardown-without-a-path |
+| 0–10 delta closer (nobody scores a 10 → forces naming the gap) | vague verdict / no concrete next step |
 
-## A lightweight alternative: the 0–10 delta (Adam Grant)
+## The 0–10 delta — the default closer (Adam Grant)
 
-When you don't want to hand over the full prompt — a quick gut-check, or eliciting critique from a *person* rather than a subagent — Adam Grant's framing does a lot with one question. Instead of "find problems" (which invites rubber-stamping or nitpicking), ask: **"On a scale of 0 to 10, how was this? And how do I get it closer to a 10?"** Almost nobody answers 10, and the "how do I get closer" clause forces a concrete, actionable *delta* instead of an open-ended teardown — the same high-signal middle this skill aims for, compressed into one sentence.
+This skill's default closing move — baked into the prompt above, and worth reaching for on its own. Instead of "find problems" (which invites rubber-stamping or nitpicking), ask: **"On a scale of 0 to 10, how was this? And how do I get it closer to a 10?"** Almost nobody answers 10, and the "how do I get closer" clause forces a concrete, actionable *delta* rather than an open-ended teardown — the whole high-signal middle this skill aims for, compressed into one sentence. It lifts weight two ways: as the always-on **closer** of any calibrated review, and as a **standalone quick-form** when you don't want the full prompt — a fast gut-check, or prying honest critique from a *person* who's holding back (the number is the lever: nobody wants to defend a 10).
 
 ## How to use
 
