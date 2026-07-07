@@ -45,6 +45,10 @@ Caveat kept honest: a harsh/divergent pass occasionally surfaces a genuinely sha
 | RANK + "the ONE thing to fix first" | the flat-equal-weight 30-item wall |
 | "why it matters + a fix" | teardown-without-a-path |
 
+## A lightweight alternative: the 0–10 delta (Adam Grant)
+
+When you don't want to hand over the full prompt — a quick gut-check, or eliciting critique from a *person* rather than a subagent — Adam Grant's framing does a lot with one question. Instead of "find problems" (which invites rubber-stamping or nitpicking), ask: **"On a scale of 0 to 10, how was this? And how do I get it closer to a 10?"** Almost nobody answers 10, and the "how do I get closer" clause forces a concrete, actionable *delta* instead of an open-ended teardown — the same high-signal middle this skill aims for, compressed into one sentence.
+
 ## How to use
 
 1. **Default: dispatch a review subagent with the prompt above** + the specific target ("review `src/foo.py:30-80`" / "review this render for coherence + factual backing"). Be specific about *what* and *what for*.
