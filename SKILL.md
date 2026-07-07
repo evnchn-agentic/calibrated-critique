@@ -31,7 +31,7 @@ Caveat kept honest: a harsh/divergent pass occasionally surfaces a genuinely sha
 > 5. **Distinguish a genuine flaw from a defensible choice** you'd merely have made differently — only flag the former.
 > 6. **TONE: direct and specific, never contemptuous or vague.** A peer, not a gatekeeper.
 >
-> Avoid both failure modes: rubber-stamping (missing real flaws to stay agreeable) and bone-picking (inflating trivia / piling on to seem rigorous). Aim for the high-signal middle. End with: **the ONE thing to fix first**, and an honest one-line verdict on whether the core claim holds.
+> Avoid both failure modes: rubber-stamping (missing real flaws to stay agreeable) and bone-picking (inflating trivia / piling on to seem rigorous). Aim for the high-signal middle. End with the **0–10 delta** (Adam Grant): a **0–10 score** (almost nobody gives a 10), then **the single highest-leverage fix** — the one thing to fix first — that would move it closer to a 10, plus an honest one-line verdict on whether the core claim holds.
 
 ## Which clauses are load-bearing (don't drop these)
 
@@ -44,6 +44,11 @@ Caveat kept honest: a harsh/divergent pass occasionally surfaces a genuinely sha
 | "distinguish a genuine flaw from a defensible choice" | flagging unconventional-but-fine decisions |
 | RANK + "the ONE thing to fix first" | the flat-equal-weight 30-item wall |
 | "why it matters + a fix" | teardown-without-a-path |
+| 0–10 delta closer (a withheld 10 → prompts naming the gap) | vague verdict / no concrete next step |
+
+## The 0–10 delta — the default closer (Adam Grant)
+
+The skill's default closing move, and a useful standalone. Instead of "find problems" (which invites rubber-stamping or nitpicking), ask: **"On a scale of 0 to 10, how was this? And how do I get it closer to a 10?"** The score makes it socially easy to withhold a 10, and the "how do I get closer" clause turns that gap into a concrete, actionable *delta* rather than an open-ended teardown. Use it two ways: as the **closer** of a full calibrated review (above), and as a **standalone quick-form** — a fast gut-check, or eliciting honest critique from a *person* reluctant to criticize, where the number is what makes the gap safe to name.
 
 ## How to use
 
