@@ -44,7 +44,7 @@ Caveat kept honest: a harsh/divergent pass occasionally surfaces a genuinely sha
 | "distinguish a genuine flaw from a defensible choice" | flagging unconventional-but-fine decisions |
 | RANK + "the ONE thing to fix first" | the flat-equal-weight 30-item wall |
 | "why it matters + a fix" | teardown-without-a-path |
-| 0–10 delta closer (a withheld 10 → forces naming the gap) | vague verdict / no concrete next step |
+| 0–10 delta closer (a withheld 10 → prompts naming the gap) | vague verdict / no concrete next step |
 
 ## The 0–10 delta — the default closer (Adam Grant)
 
