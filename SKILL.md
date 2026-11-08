@@ -48,7 +48,7 @@ Caveat kept honest: a harsh/divergent pass occasionally surfaces a genuinely sha
 
 ## The 0–10 delta — the default closer (Adam Grant)
 
-The skill's default closing move, and a useful standalone. Instead of "find problems" (which invites rubber-stamping or nitpicking), ask: **"On a scale of 0 to 10, how was this? And how do I get it closer to a 10?"** The score makes it socially easy to withhold a 10, and the "how do I get closer" clause turns that gap into a concrete, actionable *delta* rather than an open-ended teardown. Use it two ways: as the **closer** of a full calibrated review (above), and as a **standalone quick-form** — a fast gut-check, or eliciting honest critique from a *person* reluctant to criticize, where the number is what makes the gap safe to name.
+The skill's default closing move, and a useful standalone. It adapts Adam Grant: *"When people hesitate to give honest feedback on an idea, draft, or performance, I ask for a 0-10 score. No one ever says 10. Then I ask how I can get closer to a 10."* (quoted in [James Clear's 3-2-1, 2021-03-25](https://jamesclear.com/3-2-1/march-25-2021)). Instead of "find problems" (which invites rubber-stamping or nitpicking), ask: **"On a scale of 0 to 10, how was this? And how do I get it closer to a 10?"** (this wording is the skill's, not Grant's). The score makes it socially easy to withhold a 10, and the "how do I get closer" clause turns that gap into a concrete, actionable *delta* rather than an open-ended teardown. Use it two ways: as the **closer** of a full calibrated review (above), and as a **standalone quick-form** — a fast gut-check, or eliciting honest critique from a *person* reluctant to criticize, where the number is what makes the gap safe to name.
 
 ## How to use
 
